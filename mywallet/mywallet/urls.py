@@ -19,7 +19,10 @@ from spendings import views
 
 urlpatterns = [
     path('',views.index,name='index'),
+    path('index.html',views.index,name='index'),
     path('WalletData.html', views.wallet, name='wallet'),
     path('spendings/', include('spendings.urls')),
+    path('Setbudget.html', views.setbudget,name='setbudget'),
+    path('NewPurchase.html',views.purchase, name='purchase'),
     path('admin/', admin.site.urls),
 ]

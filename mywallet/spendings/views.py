@@ -4,6 +4,9 @@ from django.template import loader
 from .models import Budget
 from .models import Spend
 
+def setbudget(request):
+    return render(request,"Setbudget.html", {})
+    
 def purchase(request):
     return render(request, 'NewPurchase.html', {})
 
