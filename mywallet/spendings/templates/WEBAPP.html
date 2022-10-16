@@ -40,9 +40,10 @@
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
-							<li><a href="index.html">Home</a></li>
+							<li><a href="WEBAPP.html">Home</a></li>
 							<li><a href="WalletData.html">Wallet</a></li>
 							<li><a href="Setbudget.html">Budget</a></li>
+							<li><a href="NewPurchase.html">Enter Purchase</a></li>
 						</ul>
 					</nav>
 
@@ -53,46 +54,41 @@
 								<h1> <center> Welcome to Wallet App </center> </h1>
 								 <h4> <center> A free budget visuilization service that allows you to track your spending <center> </h4>
 							</header>
-							<section class="tiles">
+						<section class="tiles">
 								<article class="style2">
 									<span class="image">
-										<img src="{% static 'images/pic02.jpg' %}" alt="" />
+										<img src="images/pic02.jpg" alt="" />
 									</span>
 									<a href="Setbudget.html">
 										<h2>Budget</h2>
 										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+											<p>Set your monthly budget</p>
 										</div>
 									</a>
 								</article>
 								<article class="style3">
 									<span class="image">
-										<img src="{% static 'images/pic02.jpg' %}" alt="" />
+										<img src="images/pic03.jpg" alt="" />
 									</span>
 									<a href="WalletData.html">
 										<h2>Wallet</h2>
 										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+											<p>View spending insights</p>
 										</div>
 									</a>
 								</article>
-								{% if food %}
-								<article>
+								<article class="style4">
 									<span class="image">
-										{% if food < 0 %}
-										<img src="{% static 'images/greencard.png' %}" alt="" />
-										{% else %}
-										<img src="{% static 'images/greencard.png' %}" alt="" />
-										{% endif %}
+										<img src="images/pic04.jpg" alt="" />
 									</span>
-									<a href="WalletData.html">
-										<!-- <h2>Food</h2> -->
+									<a href="NewPurchase.html">
+										<h2>New Purchase</h2>
 										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+											<p>Enter information on new purchases</p>
 										</div>
 									</a>
 								</article>
-								{% endif %}
+
 							</section>
 						</div>
 					</div>
