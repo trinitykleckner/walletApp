@@ -4,6 +4,9 @@ from django.template import loader
 from .models import Budget
 from .models import Spend
 
+def purchase(request):
+    return render(request, 'NewPurchase.html', {})
+
 def wallet(request):
     this = Budget.objects.filter(id=1)[0]
     bud = Budget.objects.filter(id=2)[0]
